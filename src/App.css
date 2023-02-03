@@ -36,3 +36,24 @@
     transform: rotate(360deg);
   }
 }
+
+.navbar {
+  margin: 25px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+form > p {
+  color: red;
+}
+
+input {
+  width: 20%;
+}
