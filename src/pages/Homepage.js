@@ -1,5 +1,6 @@
 import { useQuery } from "@tanstack/react-query";
 import Axios from "axios";
+import CustomHook from "./CustomHook";
 
 export const Homepage = () => {
   const { data, isLoading, refetch } = useQuery(["cat"], () => {
@@ -12,9 +13,10 @@ export const Homepage = () => {
 
   return (
     <div>
-      <h1>Homepage</h1>
+      <h1>useQuery Hook</h1>
       <p>{data?.fact}</p>
       <button onClick={refetch}>Update Data</button>
+      <CustomHook />
     </div>
   );
 };

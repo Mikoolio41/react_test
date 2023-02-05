@@ -32,6 +32,7 @@ export const Form = () => {
 
   return (
     <form onSubmit={handleSubmit(onSubmit)}>
+      <h2>useForm hook and yup library to validate forms </h2>
       <input type="text" placeholder="Full name" {...register("fullName")} />
       <p>{errors.fullName?.message}</p>
       <input type="text" placeholder="Email" {...register("email")} />
